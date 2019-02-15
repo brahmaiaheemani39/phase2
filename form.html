@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <div class="Carr" >
+      <h1>Career Object</h1>
+      <input type="text" name="Career" value="" placeholder="Enter your Career Object" id="Career">
+
+    </div>  <div class="formDiv">
+
+      <div class="Sub">
+        <h1>Personal Information</h1>
+        <input type="text" name="Name" value="" placeholder="Enter your Name" id="Name"><br>
+        <input type="text" name="RollNo" value="" placeholder="Enter your RollNo" id="RollNumber"><br>
+        <input type="number" name="PhoneNo" value="" placeholder="Enter your Phone number" id="PhoneNumber"><br>
+        <input type="email" name="Email" value="" placeholder="Enter your Mail Id" id="Email"><br>
+      </div>
+
+      <div class="Sub">
+        <h1>Educational Information</h1>
+        <select class="Degree" name="Degree" id="Degree">
+          <option value="">Select your Degree</option>
+          <option value="B.Tech">B.Tech</option>
+          <option value="M.tech">M.Tech</option>
+          <option value="Degree">Degree</option>
+          <option value="Others">Others</option>
+
+        </select>
+        <input type="text" name="College" value="" placeholder="Enter your College name" id="College">
+        <select class="Branch" name="Branch" id="Branch">
+          <option value="">Select your branch</option>
+          <option value="CSE">CSE</option>
+          <option value="EEE">EEE</option>
+          <option value="ECE">ECE</option>
+          <option value="IT">IT</option>
+          <option value="CIVIL">CIVIL</option>
+          <option value="MECH">MECH</option>
+
+        </select>
+        <input type="text" name="Marks" value="" placeholder="Enter your CGPA" id="CGPA">
+
+
+      </div>
+      <div class="Sub">
+        <h1>Intermediate Information</h1>
+        <select class="Degree" name="Degree" id="iDegree" >
+          <option value="">Select your Degree</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Diploma">Diploma</option>
+
+        </select>
+        <input type="text" name="College" value="" placeholder="Enter your College name" id="iCollege">
+        <select class="Group" name="Group" id="Group" >
+          <option value="">Select your Group</option>
+          <option value="MPC">MPC</option>
+          <option value="BiPC">BiPC</option>
+          <option value="CEC">CEC</option>
+          <option value="MEC">MEC</option>
+          <option value="HEC">HEC</option>
+          <option value="CSE">CSE</option>
+          <option value="EEE">EEE</option>
+          <option value="ECE">ECE</option>
+          <option value="IT">IT</option>
+          <option value="CIVIL">CIVIL</option>
+          <option value="MECH">MECH</option>
+          <option value="Others">Others</option>
+        </select>
+          <input type="text" name="iMarks" value="" placeholder="Enter your marks" id="iMarks">
+
+      </div>
+      <div class="Sub">
+        <h1>SSC Information</h1>
+        <select class="Ssc" name="Ssc" id="Ssc" >
+          <option value="">Select your SSC Board</option>
+          <option value="SSC">SSC</option>
+          <option value="CBSE">CBSE</option>
+          <option value="ICSE">ICSE</option>
+
+        </select>
+        <input type="text" name="School" value="" placeholder="School" id="School">
+        <select class="Medium" name="Medium" id="Medium"  >
+          <option value="">Select your Group</option>
+          <option value="English">English</option>
+          <option value="Telugu">Telugu</option>
+          <option value="Urdu">Urdu</option>
+
+          <option value="Others">Others</option>
+        </select>
+        <input type="text" name="CGPA" value="" placeholder="Enter your CGPA" id="SCGPA">
+
+      </div>
+
+
+    </div>
+    <div class="Ski">
+      <h1>Skills</h1>
+
+        <input type="text" name="Skills" value="" placeholder="Enter your Skills" id="Skills">
+
+    </div>
+<button type="button" name="button" onclick="Submit();" id=Submit >Submit</button>
+  </body>
+  <script type="text/javascript" src="json/store.js">
+
+  </script>
+</html>
