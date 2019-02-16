@@ -63,11 +63,11 @@ request.onsuccess=function (e) {
   branch.textContent=getProfile.branch;
     left.appendChild(branch);
 
-     let roll=document.createElement("h3");
+     let roll=document.createElement("h4");
     roll.textContent=getProfile.roll;
     left.appendChild(roll);
 
-     let email=document.createElement("h3");
+     let email=document.createElement("h5");
     email.textContent=getProfile.email;
     left.appendChild(email);
  //
@@ -89,7 +89,7 @@ request.onsuccess=function (e) {
  cObj.textContent="Career Object";
  right.appendChild(cObj);
 
- let cObject=document.createElement("h1");
+ let cObject=document.createElement("h2");
  cObject.textContent=getProfile.co;
  right.appendChild(cObject);
 
@@ -98,21 +98,21 @@ request.onsuccess=function (e) {
   pInfo.textContent="Personal Information";
   right.appendChild(pInfo);
 
-  let nam=document.createElement("h2");
+  let nam=document.createElement("h3");
   nam.textContent="Name:"+getProfile.name;
   right.appendChild(nam);
 
 
-   let rno=document.createElement("h2");
+   let rno=document.createElement("h3");
    rno.textContent="Roll Number:"+getProfile.roll;
    right.appendChild(rno);
 
 
-    let pno=document.createElement("h2");
+    let pno=document.createElement("h3");
     pno.textContent="Phone Number:"+getProfile.ph;
     right.appendChild(pno);
 
-    let em=document.createElement("h2");
+    let em=document.createElement("h3");
     em.textContent="Email Id:"+getProfile.email;
     right.appendChild(em);
 
@@ -121,70 +121,81 @@ request.onsuccess=function (e) {
      eInfo.textContent="Educational Information";
      right.appendChild(eInfo);
 
-     let deg=document.createElement("h2");
-     deg.textContent="Name of the Degree:"+getProfile.degree;
-     right.appendChild(deg);
+     let li1=document.createElement("h2");
+     li1.textContent=getProfile.degree;
+     right.appendChild(li1);
+
+     let ul1=document.createElement("ul");
+      right.appendChild(ul1);
 
 
-      let cname=document.createElement("h2");
-      cname.textContent="Name of the College:"+getProfile.college;
-      right.appendChild(cname);
+
+      let li2=document.createElement("li");
+      li2.textContent="College:"+getProfile.college;
+      right.appendChild(li2);
 
 
-       let bname=document.createElement("h2");
-       bname.textContent="Branch:"+getProfile.branch;
-       right.appendChild(bname);
+       let li3=document.createElement("li");
+       li3.textContent="Branch:"+getProfile.branch;
+       right.appendChild(li3);
 
-       let cg=document.createElement("h2");
-       cg.textContent="CGPA:"+getProfile.cgpa;
-       right.appendChild(cg);
+       let li4=document.createElement("li");
+       li4.textContent="CGPA:"+getProfile.cgpa;
+       right.appendChild(li4);
 
 
   //----------------Intermediate info
-  let iInfo=document.createElement("h1");
-  iInfo.textContent="Intermediate/Diploma Information";
-  right.appendChild(iInfo);
+  // let iInfo=document.createElement("h1");
+  // iInfo.textContent="Intermediate/Diploma Information";
+  // right.appendChild(iInfo);
 
-  let dege=document.createElement("h2");
-  dege.textContent="Intermediate/Diploma:  "+getProfile.idegree;
-  right.appendChild(dege);
+    let li5=document.createElement("h2");
+    li5.textContent=getProfile.idegree;
+    right.appendChild(li5);
 
-
-   let coname=document.createElement("h2");
-   coname.textContent="Name of the College:"+getProfile.icollege;
-   right.appendChild(coname);
+  let ul2=document.createElement("ul");
+   right.appendChild(ul2);
 
 
-    let grp=document.createElement("h2");
-    grp.textContent="Group/Branch:"+getProfile.group;
-    right.appendChild(grp);
 
-    let cgp=document.createElement("h2");
-    cgp.textContent="Marks:"+getProfile.imarks;
-    right.appendChild(cgp);
+   let li6=document.createElement("li");
+   li6.textContent="College:"+getProfile.icollege;
+   right.appendChild(li6);
+
+
+    let li7=document.createElement("li");
+    li7.textContent="Group/Branch:"+getProfile.group;
+    right.appendChild(li7);
+
+    let li8=document.createElement("li");
+    li8.textContent="Marks:"+getProfile.imarks;
+    right.appendChild(li8);
 
 //----------------ssc Information-------------------
-let sInfo=document.createElement("h1");
-sInfo.textContent="SSC Information";
-right.appendChild(sInfo);
+// let sInfo=document.createElement("h1");
+// sInfo.textContent="SSC Information";
+// right.appendChild(sInfo);
+let ssc=document.createElement("h2");
+ssc.textContent=getProfile.ssc;
+right.appendChild(ssc);
 
-let brd=document.createElement("h2");
-brd.textContent="Name of the SSC Board:"+getProfile.ssc;
-right.appendChild(brd);
+let ul3=document.createElement("ul");
 
-
- let sname=document.createElement("h2");
- sname.textContent="Name of the School:"+getProfile.school;
- right.appendChild(sname);
+right.appendChild(ul3);
 
 
-  let med=document.createElement("h2");
-  med.textContent="Medium:"+getProfile.medium;
-  right.appendChild(med);
+ let li9=document.createElement("li");
+ li9.textContent="School:"+getProfile.school;
+ right.appendChild(li9);
 
-  let scg=document.createElement("h2");
-  scg.textContent="CGPA:"+getProfile.scgpa;
-  right.appendChild(scg);
+
+  let li10=document.createElement("li");
+  li10.textContent="Medium:"+getProfile.medium;
+  right.appendChild(li10);
+
+  let li11=document.createElement("li");
+  li11.textContent="CGPA:"+getProfile.scgpa;
+  right.appendChild(li11);
   //------------------skills------------
 
   let skills=document.createElement("h1");

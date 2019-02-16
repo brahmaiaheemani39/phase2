@@ -59,11 +59,11 @@ request.onsuccess=function (e) {
   branch.textContent=getProfile[i].branch;
     card.appendChild(branch);
 
-     let roll=document.createElement("h3");
+     let roll=document.createElement("h4");
     roll.textContent=getProfile[i].roll;
     card.appendChild(roll);
 
-     let email=document.createElement("h3");
+     let email=document.createElement("h5");
     email.textContent=getProfile[i].email;
     card.appendChild(email);
  //
@@ -77,6 +77,11 @@ request.onsuccess=function (e) {
  // image.alt="profile image";
  // leftdiv.appendChild(image);
     }
+    // if (getProfile[i]=null) {
+    //   let n=document.createElement("h3");
+    //  n.textContent="NO cards to display";
+    //  card.appendChild(n);
+    // }
 
   }
 }
