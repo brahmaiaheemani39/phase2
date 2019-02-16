@@ -3,7 +3,7 @@ body
   background-image: linear-gradient(145deg,white,grey) /*url("https://www.xmple.com/wallpaper/linear-white-gradient-blue-1920x1080-c2-b0c4de-fff5ee-a-60-f-14.svg")*/;
   /* background-size: cover; */
   background-repeat:no-repeat;
-  background-size:cover;
+  background-size:100%;
  /* width: 75%; */
 /* transform-style: flat; */
 }
@@ -277,4 +277,4 @@ transform: translate(-15%);
 }
 
 }
-
+/*laptop view*/
